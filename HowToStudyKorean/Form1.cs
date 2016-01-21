@@ -72,16 +72,18 @@ namespace HowToStudyKorean
                 //"I have a ____"
                 case 2:
                     tmp = global.my_words.get_word("object");
-                    global.english_sentence = global.subject_picker("English", "title", "have") + " a " + tmp.english;
-                    global.korean_sentence = global.subject_picker("Korean", "title", "have") + " " + tmp.korean + tmp.have_helper() + " 있다";
+                    global.subject_picker("title", "have");
+                    global.english_sentence += " a " + tmp.english;
+                    global.korean_sentence += " " + tmp.korean + tmp.have_helper() + " 있다";
                     write_screen();
                     break;
 
                 //"I am in/at ____"
                 case 3:
                     tmp = global.my_words.get_word("location");
-                    global.english_sentence = global.subject_picker("English", "title", "be") + " at the " + tmp.english;
-                    global.korean_sentence = global.subject_picker("Korean", "title", "be") + " " + tmp.korean + "에 있다";
+                    global.subject_picker("title", "be");
+                    global.english_sentence += " at the " + tmp.english;
+                    global.korean_sentence += " " + tmp.korean + "에 있다";
                     write_screen();
                     break;
 

@@ -19,3 +19,9 @@ D:\Documents\Visual-C#\HowToStudyKorean\Korean-Driller\HowToStudyKorean\obj\Debu
 D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\bin\Debug\HowToStudyKorean.exe.config
 D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\obj\Debug\HowToStudyKorean.exe
 D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\obj\Debug\HowToStudyKorean.pdb
+D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\obj\Debug\HowToStudyKorean.csprojResolveAssemblyReference.cache
+D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\obj\Debug\HowToStudyKorean.Form1.resources
+D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\obj\Debug\HowToStudyKorean.Properties.Resources.resources
+D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\obj\Debug\HowToStudyKorean.csproj.GenerateResource.Cache
+D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\bin\Debug\HowToStudyKorean.exe
+D:\Documents\Visual-C#\Korean-Driller\HowToStudyKorean\bin\Debug\HowToStudyKorean.pdb

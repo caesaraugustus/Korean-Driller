@@ -19,64 +19,49 @@ namespace HowToStudyKorean
         public static int drill_selection = 0;
         public static Random r = new Random();
 
-        public static string subject_picker(string language, string subject, string verb)
+        public static void subject_picker(string subject, string verb)
         {
             int i = r.Next(0, 2);
             word sub = global.my_words.get_word(subject);
-            word c = new word();
-            c.korean_ending = sub.be_helper();
             switch (i)
             {
                 case 0:
                     switch (verb)
                     {
                         case "be":
-                            c.english = "am";
+                            english_sentence += "I am";
                             break;
                         case "have":
-                            c.english = "have";
+                            english_sentence += "I have";
                             break;
                     }
-                    if (language == "English")
-                        return "I " + c.english;
-                    else if (language == "Korean")
-                        return "나는";
-                    else
-                        return "Oops";
+                    korean_sentence += "나는";
+                    break;
                 case 1:
                     switch (verb)
                     {
                         case "be":
-                            c.english = "is";
+                            english_sentence += "This " + sub.english + " is ";
                             break;
                         case "have":
-                            c.english = "has";
+                            english_sentence += "This " + sub.english + " has ";
                             break;
                     }
-                    if (language == "English")
-                        return "This " + sub.english + " " + c.english;
-                    else if (language == "Korean")
-                        return "이 " + sub.korean + " " + c.korean_ending;
-                    else
-                        return "Oops";
+                    korean_sentence += "이 " + sub.korean + " " + sub.be_helper();
+                    break;
                 case 2:
                     switch (verb)
                     {
                         case "be":
-                            c.english = "is";
+                            english_sentence += "That " + sub.english + " is ";
                             break;
                         case "have":
-                            c.english = "has";
+                            english_sentence += "That " + sub.english + " has ";
                             break;
                     }
-                    if (language == "English")
-                        return "That " + sub.english + " " + c.english;
-                    else if (language == "Korean")
-                        return "그 " + sub.korean + " " + c.korean_ending;
-                    else
-                        return "Oops";
+                    korean_sentence += "그 " + sub.korean + " " + sub.be_helper();
+                    break;
             }
-            return "Oops";
         }
 
         public static string location_picker(string language)
