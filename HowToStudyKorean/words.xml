@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <word_list>
   <word>
+      <english>thing</english>
+      <korean>것</korean>
+      <category>blank</category>
+      <korean_ending>0</korean_ending>
+  </word>
+  <word>
       <english>man</english>
       <korean>남자</korean>
       <category>title</category>
